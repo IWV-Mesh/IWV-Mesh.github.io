@@ -18,4 +18,4 @@ We are a group of enthusiasts dedicated to creating a robust mesh data network t
 * Every 3rd Saturday of the Month
  
 
-<a href="#" class="cta-button">Join the Network</a>
+<a href="https://www.youtube.com/@IWVMESHNet" class="cta-button">Check Out Our Youtube Channel</a>

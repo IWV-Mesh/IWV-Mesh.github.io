@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <style>
+        :root { --bg-dark: #1a2a36; --accent-green: #00ff00; --sand: #e6d5b8; --clay: #b35a38; --text-light: #f4f4f4; }
+        body { font-family: sans-serif; background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; margin: 0; }
+        header { text-align: center; padding: 2rem; background: rgba(0,0,0,0.2); }
+        .logo { max-width: 200px; border-radius: 50%; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .cta-button { display: inline-block; background: var(--clay); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="{{ site.baseurl }}/assets/1000005908.png" alt="Logo" class="logo">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </header>
+
+    <div class="container">
+        {{ content }}
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; opacity: 0.6;">
+        <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
+    </footer>
+
+</body>
+</html>

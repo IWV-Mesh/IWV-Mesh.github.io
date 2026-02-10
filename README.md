@@ -1,164 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
-        <title>IWV Mesh</title>
-        <link rel="stylesheet" href="matcha.min.css">
-        <link rel="stylesheet" href="styles.css?v=6">
-        <meta name="description" content="Allowing anyone with a smartphone to text without power or internet by building a solar-powered mesh radio network in TThe Indian Wells Valley">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-    </head>
-    <body>
-        <header>
-            <a href="/"><img src="images/Austin-Mesh-Logo.svg" class="logo" alt="Logo for Austin Mesh" title="Austin Mesh" width="500" height="121" /></a>
-            <button onclick="document.getElementById('event').showModal()" class="default meet-button">📅 Upcoming Meeting 2/25</button>
-        </header>
-        <dialog id="event">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWV Mesh Net | Community Connected</title>
+    <style>
+        :root {
+            --bg-dark: #1a2a36;
+            --accent-green: #00ff00;
+            --sand: #e6d5b8;
+            --clay: #b35a38;
+            --text-light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(26,42,54,1) 100%);
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: var(--sand);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-bottom: 3px solid var(--clay);
+        }
+
+        .card h3 {
+            color: var(--accent-green);
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--clay);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #d36b45;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
     <header>
-        <h1>Meetup at Flight Line Tap Room</h1>
+        <img src="1000005908.png" alt="IWV Mesh Net Logo" class="logo">
+        <h1>IWV MESH NET</h1>
+        <div class="status-badge">● Network Online</div>
+        <p>Building a resilient, community-owned communications network for the Indian Wells Valley.</p>
     </header>
-    <p>Meetup organized by Gater at Flight Line Tap Room</p>
-    <p><b>Every 3rd Saturday of the Month, 2:00 PM</b> (<a href="https://discord.com/events/1204595620204249138/1458969795100676126" target="_blank">Save the date</a>)</p>
-    <p>259 N Balsam St, Ridgecrest, CA 93555</p>
+
+    <div class="container">
+        <section style="text-align: center;">
+            <h2>Off-Grid. Decentralized. Together.</h2>
+            <p>We are a group of enthusiasts dedicated to creating a robust mesh data network that works even when the traditional internet doesn't. From the mountains to the valley floor, we stay connected.</p>
+            <a href="#" class="cta-button">Join the Network</a>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Resilience</h3>
+                <p>Designed to operate independently of major ISPs, ensuring communication during local emergencies or outages.</p>
+            </div>
+            <div class="card">
+                <h3>Open Access</h3>
+                <p>Built on open-source protocols. Our network is owned by the people who use it, not a corporation.</p>
+            </div>
+            <div class="card">
+                <h3>Local Community</h3>
+                <p>Connecting neighbors across the IWV through high-site nodes and home-based mesh points.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <form method="dialog">
-            <a class="default" href="https://discord.com/events/1204595620204249138/1458969795100676126" type="button">Save the date</a>
-            <button type="submit">Close</button>
-        </form>
+        <p>&copy; 2026 IWV Mesh Net. Located in the High Desert.</p>
     </footer>
-</dialog>
-        <main>
-            <nav>
-                <menu>
-                    <li><a href="/">Home</a></li>
-                    <li>
-                        <a href="/learn/">Learn</a>
-                        <menu>
-                            <li><a href="/learn/#about">About</a></li>
-                            <li><a href="/learn/#coverage">Network coverage</a></li>
-                            <li><a href="/learn/#comparisons">Similar technology</a></li>
-                            <li><a href="/learn/meshcore-vs-meshtastic/">MeshCore vs Meshtastic</a></li>
-                            <li><a href="/learn/tuning-cavity-filter/">Tuning a cavity filter</a></li>
-                            <li><a href="/learn/kite-nodes-for-mesh-networking/">Kite Nodes for Mesh Networking</a></li>
-                        </menu>
-                    </li>
-                    <li>
-                        <a href="/join/">Join</a>
-                        <menu>
-                            <li><a href="/join/">Join the network</a></li>
-                            <li><a href="/join/property-owner-faq-hosting-a-node/">Property Owner FAQ</a></li>
-                            <li><a href="/join/getting-started-meshcore/">Getting started with MeshCore</a></li>
-                        </menu>
-                    </li>
-                    <li>
-                        <a href="/devices/">Devices</a>
-                        <menu>
-                            <li><a href="/devices/#options">Recommended Options</a></li>
-                            <li><a href="/devices/#solar">DIY Solar Repeaters</a></li>
-                            <li><a href="/devices/#aerial">Aerial Nodes</a></li>
-                        </menu>
-                    </li>
-                    <li>
-                        <a href="/similar-networks/">Similar networks</a>
-                        <menu>
-                            <li><a href="/similar-networks/#other-meshes">Other meshes</a></li>
-                            <li><a href="/similar-networks/#start-a-similar-network">Start a similar network</a></li>
-                        </menu>
-                    </li>
-                    <li><a href="/partners/">Partners</a></li>
-                </menu>
-                <menu class="menu--social">
-                    <li>
-                        <a href="https://discord.gg/6a5Sv2s9bG" target="_blank" title="Join the AustinMesh Discord">
-                            <img src="images/social/discord.svg" height="21" alt="Discord Logo" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com/channel/UCtFl5gdwv0SdrP8sHlDMKNA" target="_blank" title="Join the AustinMesh YouTube">
-                            <img src="images/social/youtube.svg" height="21" alt="YouTube Logo" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/p/Cq0jOpYLpZy/" target="_blank" title="Join the AustinMesh Instagram">
-                            <img src="images/social/instagram.svg" height="21"  alt="Instagram Logo" />
-                        </a>
-                    </li>
-                </menu>
-            </nav>
-            <h1>IWV Mesh</h1>
-            <section class="hero lazy" 
-                     data-bg="images/austin-mesh-wildflower-center-small.webp" 
-                     data-bg-retina="images/austin-mesh-wildflower-center-large.webp"
-                     aria-label="Hand holding a Meshtastic communicator at the Ladybird Johnson Wildflower Center with a view of the Texas countryside and Austin city skyline in the background with an invitation to join the group or learn more">
-                <div class="hero-content">
-                    <h2>We're building a free text messaging network in the Indian Wells Valley</h2>
-                    <a class="success" href="/join/">Join the network</a>
-                    <a class="default" href="/learn/">About us</a>
-                </div>
-            </section>
-            <section>
-                <h2>Dive in</h2>
-                <p>We have all sorts of great content on our website. From our world famous <a href="/learn/#eli5">Mesh Networking ELI5</a> to a great list of tips for <a href="/similar-networks/#start-a-similar-network">starting your own mesh network</a> we have aimed to share everything we learn as we grow Austin Mesh. Take a look through the navigation at the top of our site and <a href="mailto:info@austinmesh.org">drop us an email</a> if you appreciate what we've done or have any questions or ideas. We'd love to hear from you!</p>
-            </section>
-            <section>
-                <h2>Community partners</h2>
-                <p>We're extremely grateful to our great community partners who have helped to build this strong network. <a href="/partners/">Explore photos, learn more, or become a partner</a></p>
-                <div class="partner-logos">
-                    <div>
-                        <img src="images/aisd/AISD-GusGarcia-Logo.svg" width="240" alt="Logo of the Gus Garcia Young Men's Leadership Academy AISD" title="Gus Garcia Young Men's Leadership Academy AISD" loading="lazy" class="white-bg" />
-                    </div>
-                    <div>
-                        <img src="images/aisd/AISD-Hart-Logo.svg" width="240" alt="Logo of the HART Elementary School AISD" title="HART Elementary AISD" loading="lazy" class="white-bg" />
-                    </div>
-                    <div>
-                        <img src="images/aisd/AISD-LBJ-Logo.svg" width="240" alt="Logo of the LBJ Early College High School, AISD" title="Logo of the LBJ Early College High School, AISD" loading="lazy" class="white-bg" />
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Our website content is licensed under Creative Commons
-                <br>feel free to use if for your club's website: <a href="https://github.com/austinmesh/www">Github</a>
-                <br>If we've inspired you, please <a href="mailto:info@austinmesh.org">email us</a>!
-                <br>This site is (c) by Tommy Ekstrand and is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-                <br><a href="/privacy/">Privacy Policy</a>
-            </p>
-        </footer>
-    </body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector("header").classList.add("loaded");
-        });
-        document.addEventListener("DOMContentLoaded", function() {
-          const lazyContainers = document.querySelectorAll('.lazy');
 
-          // Set up options for the Intersection Observer
-          const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-          };
-
-          const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                const container = entry.target;
-                const isRetina = window.devicePixelRatio > 1;
-                const bgImage = isRetina ? container.dataset.bgRetina : container.dataset.bg;
-                container.style.backgroundImage = `url(${bgImage})`;
-
-                // Once loaded, stop observing the element
-                observer.unobserve(container);
-              }
-            });
-          }, options);
-
-          lazyContainers.forEach(container => {
-            observer.observe(container);
-          });
-        });
-    </script>
+</body>
 </html>
